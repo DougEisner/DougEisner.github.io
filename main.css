@@ -190,7 +190,7 @@ p {
     border: 0;
     margin: 0 0 .5em;
     padding-left: 1.5em;
-    list-style: url("/images/rarrow_7.v14850.png") square
+    list-style: url("images/rarrow_7.v14850.png") square
 }
 
 .textbox p {
@@ -312,7 +312,7 @@ input[type=submit].disabled, input[type=submit].disabled:hover {
 
 .searchsuggestions ul {
     border: 1px solid #eee;
-    list-style: url("/images/rarrow_7.v14850.png") disc;
+    list-style: url("images/rarrow_7.v14850.png") disc;
     padding-top: 5px;
     padding-bottom: 5px
 }
@@ -503,7 +503,7 @@ wbr:after {
 .sf-menu li.current>a {
     color: #fc0;
     font-weight: bold;
-    background: url("/images/rarrow_9_fc0.v14850.png") left center no-repeat
+    background: url("images/rarrow_9_fc0.v14850.png") left center no-repeat
 }
 
 .sf-menu li {
@@ -553,7 +553,7 @@ wbr:after {
     margin: 0;
     padding: 0 0 0 6px;
     text-decoration: none;
-    background: url("/images/tab_sprites.v14850.png") no-repeat left top
+    background: url("images/tab_sprites.v14850.png") no-repeat left top
 }
 
 #subnav span {
@@ -561,7 +561,7 @@ wbr:after {
     display: block;
     padding: 5px 9px 4px 1px;
     color: #333;
-    background: url("/images/tab_sprites.v14850.png") no-repeat 100% -218px;
+    background: url("images/tab_sprites.v14850.png") no-repeat 100% -218px;
     text-align: center
 }
 
@@ -969,7 +969,7 @@ img.imagelink:hover {
 }
 
 #fmActionDegreeTypes {
-    background: #ddd url("/images/bracketrt61.v14850.png") no-repeat center right;
+    background: #ddd url("images/bracketrt61.v14850.png") no-repeat center right;
     min-height: 61px;
     padding: .2em 13px .2em 0
 }
@@ -1331,7 +1331,7 @@ a.actiontypeicon:hover {
 }
 
 .helplink, .helplinkajax, .export, .sprite {
-    background: transparent url("/images/sprites.v14850.png") no-repeat top left
+    background: transparent url("images/sprites.v14850.png") no-repeat top left
 }
 
 .sprite-csv_icon {
@@ -1517,16 +1517,16 @@ th.sorted a, th.sortable a {
 }
 
 th.sortable a {
-    background: url("/images/sort_arrow_off.v14850.gif") no-repeat right center;
+    background: url("images/sort_arrow_off.v14850.gif") no-repeat right center;
     padding-right: 6px
 }
 
 th.order1 a {
-    background: url("/images/sort_arrow_down.v14850.gif") no-repeat right center
+    background: url("images/sort_arrow_down.v14850.gif") no-repeat right center
 }
 
 th.order2 a {
-    background: url("/images/sort_arrow_up.v14850.gif") no-repeat right center
+    background: url("images/sort_arrow_up.v14850.gif") no-repeat right center
 }
 
 
@@ -2099,7 +2099,7 @@ body .ui-tooltip {
 
 .ui-widget-content {
     border: 1px solid #aaa;
-    background: #fff url(/images/ui-bg_flat_75_ffffff_40x100.v14850.png) 50% 50% repeat-x;
+    background: #fff url(images/ui-bg_flat_75_ffffff_40x100.v14850.png) 50% 50% repeat-x;
     color: #222
 }
 
@@ -2109,7 +2109,7 @@ body .ui-tooltip {
 
 .ui-widget-header {
     border: 1px solid #aaa;
-    background: #ccc url(/images/ui-bg_highlight-soft_75_cccccc_1x100.v14850.png) 50% 50% repeat-x;
+    background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.v14850.png) 50% 50% repeat-x;
     color: #222;
     font-weight: bold
 }
@@ -2120,7 +2120,7 @@ body .ui-tooltip {
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     border: 1px solid #d3d3d3;
-    background: #e6e6e6 url(/images/ui-bg_glass_75_e6e6e6_1x400.v14850.png) 50% 50% repeat-x;
+    background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.v14850.png) 50% 50% repeat-x;
     font-weight: normal;
     color: #555
 }
@@ -2132,7 +2132,7 @@ body .ui-tooltip {
 
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
     border: 1px solid #999;
-    background: #dadada url(/images/ui-bg_glass_75_dadada_1x400.v14850.png) 50% 50% repeat-x;
+    background: #dadada url(images/ui-bg_glass_75_dadada_1x400.v14850.png) 50% 50% repeat-x;
     font-weight: normal;
     color: #212121
 }
@@ -2144,7 +2144,7 @@ body .ui-tooltip {
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
     border: 1px solid #aaa;
-    background: #fff url(/images/ui-bg_glass_65_ffffff_1x400.v14850.png) 50% 50% repeat-x;
+    background: #fff url(images/ui-bg_glass_65_ffffff_1x400.v14850.png) 50% 50% repeat-x;
     font-weight: normal;
     color: #212121
 }
@@ -2156,7 +2156,7 @@ body .ui-tooltip {
 
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
     border: 1px solid #fcefa1;
-    background: #fbf9ee url(/images/ui-bg_glass_55_fbf9ee_1x400.v14850.png) 50% 50% repeat-x;
+    background: #fbf9ee url(images/ui-bg_glass_55_fbf9ee_1x400.v14850.png) 50% 50% repeat-x;
     color: #363636
 }
 
@@ -2166,7 +2166,7 @@ body .ui-tooltip {
 
 .ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
     border: 1px solid #cd0a0a;
-    background: #fef1ec url(/images/ui-bg_glass_95_fef1ec_1x400.v14850.png) 50% 50% repeat-x;
+    background: #fef1ec url(images/ui-bg_glass_95_fef1ec_1x400.v14850.png) 50% 50% repeat-x;
     color: #cd0a0a
 }
 
@@ -2204,31 +2204,31 @@ body .ui-tooltip {
 }
 
 .ui-icon, .ui-widget-content .ui-icon {
-    background-image: url(/images/ui-icons_222222_256x240.v14850.png)
+    background-image: url(images/ui-icons_222222_256x240.v14850.png)
 }
 
 .ui-widget-header .ui-icon {
-    background-image: url(/images/ui-icons_222222_256x240.v14850.png)
+    background-image: url(images/ui-icons_222222_256x240.v14850.png)
 }
 
 .ui-state-default .ui-icon {
-    background-image: url(/images/ui-icons_888888_256x240.v14850.png)
+    background-image: url(images/ui-icons_888888_256x240.v14850.png)
 }
 
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
-    background-image: url(/images/ui-icons_454545_256x240.v14850.png)
+    background-image: url(images/ui-icons_454545_256x240.v14850.png)
 }
 
 .ui-state-active .ui-icon {
-    background-image: url(/images/ui-icons_454545_256x240.v14850.png)
+    background-image: url(images/ui-icons_454545_256x240.v14850.png)
 }
 
 .ui-state-highlight .ui-icon {
-    background-image: url(/images/ui-icons_2e83ff_256x240.v14850.png)
+    background-image: url(images/ui-icons_2e83ff_256x240.v14850.png)
 }
 
 .ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
-    background-image: url(/images/ui-icons_cd0a0a_256x240.v14850.png)
+    background-image: url(images/ui-icons_cd0a0a_256x240.v14850.png)
 }
 
 .ui-icon-blank {
@@ -2948,7 +2948,7 @@ body .ui-tooltip {
 }
 
 .ui-widget-overlay {
-    background: #aaa url(/images/ui-bg_flat_0_aaaaaa_40x100.v14850.png) 50% 50% repeat-x;
+    background: #aaa url(images/ui-bg_flat_0_aaaaaa_40x100.v14850.png) 50% 50% repeat-x;
     opacity: .3;
     filter: Alpha(Opacity=30)
 }
@@ -2956,7 +2956,7 @@ body .ui-tooltip {
 .ui-widget-shadow {
     margin: -8px 0 0 -8px;
     padding: 8px;
-    background: #aaa url(/images/ui-bg_flat_0_aaaaaa_40x100.v14850.png) 50% 50% repeat-x;
+    background: #aaa url(images/ui-bg_flat_0_aaaaaa_40x100.v14850.png) 50% 50% repeat-x;
     opacity: .3;
     filter: Alpha(Opacity=30);
     border-radius: 8px
@@ -2977,7 +2977,7 @@ body .ui-tooltip {
 }
 
 .ui-autocomplete-loading {
-    background: white url("/images/indicator.v14850.gif") no-repeat right center
+    background: white url("images/indicator.v14850.gif") no-repeat right center
 }
 
 .ui-tooltip {
@@ -3052,7 +3052,7 @@ body .ui-tooltip {
     width: 203px;
     height: 216px;
     position: relative;
-    background: #fff url("/images/datadiagram_w_exo.v14850.png") no-repeat 0 0
+    background: #fff url("images/datadiagram_w_exo.v14850.png") no-repeat 0 0
 }
 
 #datadiagram ul {
@@ -3189,7 +3189,7 @@ body .ui-tooltip {
     #datadiagram {
         background: 0;
         display: list-item;
-        list-style: inside url("/images/datadiagram.v14850.png");
+        list-style: inside url("images/datadiagram.v14850.png");
         margin: 0 !important;
         padding: 0 !important
     }
