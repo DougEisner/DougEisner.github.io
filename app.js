@@ -1,4 +1,8 @@
 (function() {
+  function validateToken() {
+    return false;
+  }
+
   function getAllLinks() {
     return document.getElementsByTagName('a');
   }
@@ -13,7 +17,6 @@
         protectedLinks.push(link);
       }
     }
-
     return protectedLinks;
   }
 
@@ -21,7 +24,7 @@
     for (var i = 0, length = links.length; i < length; i++) {
       var link = links[i];
 
-      console.log('protecting', link.href);
+      // console.log('protecting', link.href);
 
       link.onclick = function(e) {
         onProtectedLinkClicked(e, link);
@@ -32,7 +35,8 @@
   function isProtectedLink(link) {
     // TODO: implement real logic to determine if a link is protected
 
-    var protectedPaths = ['/detail.go', '/reports/'];
+    // var protectedPaths = ['/detail.go', '/reports/'];
+    var protectedPaths = ['?657']
 
     for (var i = 0, length = protectedPaths.length; i < length; i++) {
       var protectedPath = protectedPaths[i];
@@ -54,17 +58,27 @@
 
     // if (!isAcademic() && !hasPaid()) requestPayment();
 
-    e.preventDefault();
-    e.stopPropagation();
+    if (validateToken()) {
+      alert('download');
+    } else {
+      e.preventDefault();
+      e.stopPropagation();
+      // display login modal
+      loginPopup();
+    }
 
-    console.warn(link.href, 'is protected');
-    alert('hi');
+
+    // console.warn(link.href, 'is protected');
   }
 
   function main() {
     // TODO: implement guard clause if they are a logged in academic or have up to date payment
 
-    // if (isLoggedIn() && (isAcademic() || hasPaid())) return;
+    // if (isLoggedIn() && (isAcademic() || hasPaid())) {
+    //   return;
+    // }
+
+    if(validateToken()) return;
 
     var links = getAllLinks();
     links = getProtectedLinks(links);
