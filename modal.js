@@ -47,8 +47,13 @@ function addPopup() {
 
   var closeBtn = document.querySelector('.close-btn');
   closeBtn.addEventListener('click', closeForm);
-}
 
+  formWrapper.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    sendData(formWrapper);
+  });
+}
 
 function closeForm() {
   var formWrapper = document.querySelector('.form-wrapper');
@@ -83,6 +88,12 @@ function replaceFormContents(formWrapper) {
 
   var closeBtn = document.querySelector('.close-btn');
   closeBtn.addEventListener('click', closeForm);
+
+  formWrapper.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    sendData(formWrapper);
+  });
 }
 
 function fadeIn(el){
@@ -95,4 +106,29 @@ function fadeIn(el){
       requestAnimationFrame(fade);
     }
   })();
+}
+
+function sendData(form) {
+  var XHR = new XMLHttpRequest();
+  var FD = new FormData(form);
+
+  XHR.addEventListener("load", function(e) {
+    alert(e.target.responseText);
+  });
+
+  XHR.addEventListener("readystatechange", function () {
+    if (this.readyState === this.DONE) {
+      console.log(this.responseText);
+    }
+  });
+
+  XHR.addEventListener("error", function(e) {
+    alert("oop!")
+  });
+
+  XHR.open("POST", "http://mockbin.org/bin/3b34b256-000e-406c-9c57-45fe519a728f");
+  // XHR.setRequestHeader("cookie", "FD");
+  XHR.setRequestHeader("accept", "application/json");
+  XHR.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+  XHR.send(FD);
 }
