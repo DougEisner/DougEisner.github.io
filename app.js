@@ -1,4 +1,5 @@
 (function() {
+  
   function validateToken() {
     return false;
   }
@@ -63,6 +64,7 @@
     } else {
       e.preventDefault();
       e.stopPropagation();
+
       // display login modal
       loginPopup();
     }
