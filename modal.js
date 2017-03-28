@@ -62,10 +62,10 @@ function replaceContents(view) {
       replaceContents('login');
     });
 
-    $('#' + view).submit( function() {
+    $('#' + view).submit( function(e) {
+      handleRegistrationSubmit(e);
       popup.removeChild(form);
       replaceContents('login');
-      handleRegistrationSubmit();
     });
   }
 }
