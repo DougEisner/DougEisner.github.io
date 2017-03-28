@@ -180,7 +180,12 @@ function sendData(url, inputData) {
   });
 
   var posting = $.post( url, inputData );
-  posting.done(function( data ) {
-    console.log(data);
+  posting.done(function( data, textStatus, request ) {
+    var token = request.getResponseHeader("_code_alliance_reg");
+    if (token) {
+      document.cookie = "valid_user= " + token;
+    } else {
+      console.log("WOMP");
+    }
   });
 }
