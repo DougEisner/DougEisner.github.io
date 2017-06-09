@@ -29,7 +29,7 @@ function addOverlay() {
 function replaceContents(view) {
   var content = {
     login: '<span class="close">&times;</span><h4>Login to access downloads</h4><input type="text" name="email" id="email" placeholder="email"/><input type="password" name="password" id="password" placeholder="password"/><input type="submit" value="submit"></input>  <a class="registration" href="#">Create an account</a></p><p class="message">Not registered? <a class="registration" href="#">Create an account</a></p>',
-    registration: '<span class="close">&times;</span><h4>Register</h4><input type="text" name="academic_name" id="name" placeholder="Name"/><input type="text" name="academic_email" id="email" placeholder="Email"/><input type="text" name="academic_organization" id="organization" placeholder="Institution"/><input type="password" name="academic_password" id="password" placeholder="Password"/><input type="password" name="academic_password_confirmation" id="password_confirmation" placeholder="Password Confirmation"/><input type="submit" value="Register"/><p class="message">Review our <a class="registration" href="https://catalyst-research-demo.herokuapp.com/privacy">Privacy Policy</a></p><p class="message">Already Registered? <a class="login" href="#">Log In</a></p>'
+    registration: '<span class="close">&times;</span><h4>Register</h4><input type="text" name="academic_name" id="name" placeholder="Name"/><input type="text" name="academic_email" id="email" placeholder="Email"/><input type="text" name="academic_organization" id="organization" placeholder="Institution"/><input type="password" name="academic_password" id="password" placeholder="Password"/><input type="password" name="academic_password_confirmation" id="password_confirmation" placeholder="Password Confirmation"/><input type="submit" value="Register"/><p class="message">Review our <a class="registration" target="_blank" href="https://catalyst-research-demo.herokuapp.com/privacy">Privacy Policy</a></p><p class="message">Already Registered? <a class="login" href="#">Log In</a></p>'
   }
   var popup = document.querySelector('.popup');
   var form = document.createElement('form');
@@ -120,6 +120,7 @@ function addStyles() {
 
   addCSSRule(sheet, ".overlay", "position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.5); z-index: 999; display: fixed; transition: all .5s ease;", 0);
   addCSSRule(sheet, ".popup", "background-color: white; flex-flow: row wrap; position: fixed;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  max-height: calc(100% - 100px);  min-width: 25em; max-width: 40em; overflow: scroll; text-align: center; justify-content: center; font-family: helvetica, sans-serif; z-index: 1000;", 0);
+  addCSSRule(sheet, ".popup::-webkit-scrollbar", "display: none;", 0);
   addCSSRule(sheet, ".wrapper", "padding: 0 0 2em 0", 0);
   addCSSRule(sheet, ".titleWrapper", "display: flex; flex: 1 1 auto; padding: 0.5em; background: #465ca8; align-items: center;", 0);
   addCSSRule(sheet, ".bodyWrapper", "padding: 2em; padding-bottom: 0;", 0);
