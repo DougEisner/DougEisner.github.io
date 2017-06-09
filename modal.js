@@ -28,7 +28,7 @@ function addOverlay() {
 
 function replaceContents(view) {
   var content = {
-    login: '<span class="close">&times;</span><h4>Login to access downloads</h4><input type="text" name="email" id="email" placeholder="email"/><input type="password" name="password" id="password" placeholder="password"/><input type="submit" value="submit"></input><p class="message">Not registered? <a class="registration" href="#">Create an account</a></p>',
+    login: '<span class="close">&times;</span><h4>Login to access downloads</h4><input type="text" name="email" id="email" placeholder="email"/><input type="password" name="password" id="password" placeholder="password"/><input type="submit" value="submit"></input>  <a class="registration" href="#">Create an account</a></p><p class="message">Review <a class="registration" href="https://catalyst-research-demo.herokuapp.com/privacy">Privacy Policy</a></p><p class="message">Not registered? <a class="registration" href="#">Create an account</a></p>',
     registration: '<span class="close">&times;</span><h4>Register</h4><input type="text" name="academic_name" id="name" placeholder="Name"/><input type="text" name="academic_email" id="email" placeholder="Email"/><input type="text" name="academic_organization" id="organization" placeholder="Institution"/><input type="password" name="academic_password" id="password" placeholder="Password"/><input type="password" name="academic_password_confirmation" id="password_confirmation" placeholder="Password Confirmation"/><input type="submit" value="Register"/><p class="message">Already Registered? <a class="login" href="#">Log In</a></p>'
   }
   var popup = document.querySelector('.popup');
@@ -76,7 +76,7 @@ function addPopup() {
   var popup = document.createElement('div');
   popup.className = "popup";
   body.appendChild(popup);
-  popup.innerHTML = '<div class="wrapper"><div class="titleWrapper"><h1>Data downloads require registration</h1><span class="close">&times;</span></div><div class="bodyWrapper"><section><h2>Non-Commercial</h2><p style="margin-top: -5px; color: #888;font-size:13px;">Academic, Nonprofit, and Government</p><p>Data downloads remain free, but require a one-time registration.</p><a style="margin-top: 10px" class="registration">Register</a></section><hr width="1"><section><h2>Commercial</h2><p style="margin-top: -5px; color: #fff;font-size:13px;">Business<p>To purchase a license, transfer to our licensing partner Catalyst Research Alliance</p><a href="http://catalyst-research-demo.herokuapp.com/ctd" class="business">Learn More</a></section></div><p class="message">Already Registered? <a class="login" href="#">Log In</a></p></div>';
+  popup.innerHTML = '<div class="wrapper"><div class="titleWrapper"><h1>Data downloads require registration</h1><span class="close">&times;</span></div><div class="bodyWrapper"><section><h2>Non-Commercial</h2><p style="margin-top: -5px; color: #888;font-size:14px;">(Academic, Nonprofit, and Government)</p><p>Data downloads remain free, but require a one-time registration.</p><a style="margin-top: 10px" class="registration">Register</a></section><hr width="1"><section><h2>Commercial</h2><p style="margin-top: -5px; color: #fff;font-size:13px;">Business<p>To purchase a license, transfer to our licensing partner Catalyst Research Alliance</p><a href="http://catalyst-research-demo.herokuapp.com/ctd" class="business">Learn More</a></section></div><p class="message">Already Registered? <a class="login" href="#">Log In</a></p></div>';
 
   var closeBtn = document.querySelector('.close');
   closeBtn.addEventListener('click', closeForm);
@@ -130,7 +130,7 @@ function addStyles() {
   addCSSRule(sheet, "h2", "background: transparent; color: black; font-weight: 500; text-align: center; border: none; font-size: 24px; margin: 0;", 0);
   addCSSRule(sheet, "section a", "font-size: 14px; font-weight: bold; line-height: 14px; text-transform: uppercase; background-color: #465ca8; color: white; padding: 15px; border: none; cursor: pointer; box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.85); text-decoration: none;", 0);
   addCSSRule(sheet, "section a:hover", "background-color: #09f", 0);
-  addCSSRule(sheet, ".message", "color: #b3b3b3; font-size: 12px; margin: 15px 0 0;", 0);
+  addCSSRule(sheet, ".message", "color: #888; font-size: 14px; margin: 15px 0 0;", 0);
   addCSSRule(sheet, ".message a", "color: rgb(0,0,238); text-decoration: none;", 0);
   addCSSRule(sheet, "span.close", "background: none; color: white; cursor: pointer; font-size: 2em; outline: none; padding: 0 .2em;", 0);
   addCSSRule(sheet, "span.close:hover", "color: goldenrod;", 0);
