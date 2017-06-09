@@ -76,7 +76,7 @@ function addPopup() {
   var popup = document.createElement('div');
   popup.className = "popup";
   body.appendChild(popup);
-  popup.innerHTML = '<div class="wrapper"><div class="titleWrapper"><h1>Data downloads require registration</h1><span class="close">&times;</span></div><div class="bodyWrapper"><section><h2>Non-Commercial</h2><p style="margin-top: -5px; color: #888;font-size:14px;">(Academic, Nonprofit, and Government)</p><p>Data downloads remain free, but require a one-time registration.</p><a style="margin-top: 10px" class="registration">Register</a></section><hr width="1"><section><h2>Commercial</h2><p style="margin-top: -5px; color: #fff;font-size:13px;">Business<p>To purchase a license, transfer to our licensing partner Catalyst Research Alliance</p><a href="http://catalyst-research-demo.herokuapp.com/ctd" class="business">Learn More</a></section></div><p class="message">Already Registered? <a class="login" href="#">Log In</a></p></div>';
+  popup.innerHTML = '<div class="wrapper"><div class="titleWrapper"><h1>Data downloads require registration</h1><span class="close">&times;</span></div><div class="bodyWrapper"><section><h2>Non-Commercial</h2><p style="margin-top: -5px; color: #888;font-size:15px;">(Academic, Nonprofit, and Government)</p><p>Data downloads remain free, but require a one-time registration.</p><a style="margin-top: 10px" class="registration">Register</a></section><hr width="1"><section><h2>Commercial</h2><p style="margin-top: -5px; color: #fff;font-size:13px;">Business<p>To purchase a license, transfer to our licensing partner Catalyst Research Alliance</p><a href="http://catalyst-research-demo.herokuapp.com/ctd" class="business">Learn More</a></section></div><p class="message">Already Registered? <a class="login" href="#">Log In</a></p></div>';
 
   var closeBtn = document.querySelector('.close');
   closeBtn.addEventListener('click', closeForm);
@@ -128,7 +128,7 @@ function addStyles() {
   addCSSRule(sheet, "section", "flex: 1 1 50%; display: flex; flex-flow: column nowrap; justify-content: space-between; color: #333; padding: 5px 15px;", 0);
   addCSSRule(sheet, "hr", "margin: 0.5em; border: none; border-left: 1px solid #999; align-self: center; height: 13em;", 0);
   addCSSRule(sheet, "h1", "font-size: 1.3rem; margin: 0; padding: 10px; color: white; flex: 1 1 auto;", 0);
-  addCSSRule(sheet, "h2", "background: transparent; color: black; font-weight: 500; text-align: center; border: none; font-size: 24px; margin: 0;", 0);
+  addCSSRule(sheet, "h2", "background: transparent; color: black; font-weight: 500; text-align: center; border: none; font-size: 26px; margin: 0;", 0);
   addCSSRule(sheet, "section a", "font-size: 14px; font-weight: bold; line-height: 14px; text-transform: uppercase; background-color: #465ca8; color: white; padding: 15px; border: none; cursor: pointer; box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.85); text-decoration: none;", 0);
   addCSSRule(sheet, "section a:hover", "background-color: #09f", 0);
   addCSSRule(sheet, ".message", "color: #888; font-size: 14px; margin: 15px 0 0;", 0);
