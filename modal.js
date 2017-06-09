@@ -76,7 +76,7 @@ function addPopup() {
   var popup = document.createElement('div');
   popup.className = "popup";
   body.appendChild(popup);
-  popup.innerHTML = '<div class="wrapper"><div class="titleWrapper"><h1>Data downloads require registration</h1><span class="close">&times;</span></div><div class="bodyWrapper"><section><h2>Non-Commercial</h2><p>(eg. Academic, Non-profit, and Government organizations)</p><p>Data downloads remain free, but require a one-time registration.</p><a class="registration">Register</a></section><hr width="1"><section><h2>Commercial</h2><p>To transfer and register with our <br>license partner Catalyst Research Alliance</p><a href="http://localhost:3000/users/sign_up" class="business">Register</a></section></div><p class="message">Already Registered? <a class="login" href="#">Log In</a></p></div>';
+  popup.innerHTML = '<div class="wrapper"><div class="titleWrapper"><h1>Data downloads require registration</h1><span class="close">&times;</span></div><div class="bodyWrapper"><section><h2>Non-Commercial</h2><p style="margin-top: -5px; color: #888;font-size:13px;">Academic, Nonprofit, and Government</p><p>Data downloads remain free, but require a one-time registration.</p><a style="margin-top: 10px" class="registration">Register</a></section><hr width="1"><section><h2>Commercial</h2><p style="margin-top: -5px; color: #fff;font-size:13px;">Business<p>To purchase a license, transfer to our licensing partner Catalyst Research Alliance</p><a href="http://catalyst-research-demo.herokuapp.com/ctd" class="business">Learn More</a></section></div><p class="message">Already Registered? <a class="login" href="#">Log In</a></p></div>';
 
   var closeBtn = document.querySelector('.close');
   closeBtn.addEventListener('click', closeForm);
@@ -122,7 +122,7 @@ function addStyles() {
   addCSSRule(sheet, ".popup", "background-color: white; flex-flow: row wrap; position: fixed;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  max-height: calc(100% - 100px);  min-width: 25em; max-width: 40em; overflow: scroll; text-align: center; justify-content: center; font-family: helvetica, sans-serif; z-index: 1000;", 0);
   addCSSRule(sheet, ".wrapper", "padding: 0 0 2em 0", 0);
   addCSSRule(sheet, ".titleWrapper", "display: flex; flex: 1 1 auto; padding: 0.5em; background: #465ca8; align-items: center;", 0);
-  addCSSRule(sheet, ".bodyWrapper", "padding: 2em;", 0);
+  addCSSRule(sheet, ".bodyWrapper", "padding: 2em; padding-bottom: 0;", 0);
   addCSSRule(sheet, ".bodyWrapper", "display: flex; padding: 1em;", 0);
   addCSSRule(sheet, "section", "flex: 1 1 50%; display: flex; flex-flow: column nowrap; justify-content: space-between; color: #333; padding: 5px 15px;", 0);
   addCSSRule(sheet, "hr", "margin: 0.5em; border: none; border-left: 1px solid #999; align-self: center; height: 13em;", 0);
